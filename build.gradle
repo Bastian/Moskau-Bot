@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+}
+
+group 'org.javacord'
+version '1.0.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation group: 'com.github.Bastian', name: 'Lavaplayer-Wrapper', version: 'cd456b3'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
+    runtimeOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.11.1'
+}
+
+mainClassName = 'org.javacord.moskau.Main'
