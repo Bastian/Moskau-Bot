@@ -83,7 +83,7 @@ public class Main {
      */
     private static void sendMoskauMessage(Messageable receiver) {
         MessageBuilder messageBuilder = new MessageBuilder()
-                .setContent("MOSKAU MOSKAU MOSKAU IST EIN SCHÖNES LAND!");
+                .setContent("MOSKAU MOSKAU RUSSLAND IST EIN SCHÖNES LAND!");
         if (Math.random() < 0.3141592653589793238462643383279502884197169399375105820974944) {
             messageBuilder.addAttachment(Main.class.getResourceAsStream("/moskau.gif"), "moskau.gif");
         }
